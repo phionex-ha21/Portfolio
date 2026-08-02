@@ -39,7 +39,7 @@ export default function Hero() {
 
             <p>&gt; Ethical Hacker</p>
 
-            <p>&gt; Full Stack Learner</p>
+            <p>&gt; Python Developer</p>
 
           </div>
 
@@ -132,7 +132,7 @@ export default function Hero() {
               <p>$ skills</p>
 
               <p>
-                Python • Networking • Postman • QA Testing •
+                Python • Networking Monitoring • QA Testing •
                 Web Security
               </p>
 
