@@ -133,7 +133,7 @@ export default function Hero() {
 
               <p>
                 Python • Networking • Postman • QA Testing •
-                Application Security
+                Web Security
               </p>
 
               <br />
