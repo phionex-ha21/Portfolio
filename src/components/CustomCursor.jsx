@@ -1,23 +1,47 @@
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function CustomCursor() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({
+    x: 0,
+    y: 0,
+  });
 
   useEffect(() => {
-    const updateMousePosition = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+    const move = (e) => {
+      setPosition({
+        x: e.clientX,
+        y: e.clientY,
+      });
     };
-    window.addEventListener('mousemove', updateMousePosition);
-    return () => window.removeEventListener('mousemove', updateMousePosition);
+
+    window.addEventListener("mousemove", move);
+
+    return () => window.removeEventListener("mousemove", move);
   }, []);
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-4 h-4 bg-neon rounded-full pointer-events-none z-[100] mix-blend-difference"
-      animate={{ x: mousePosition.x - 8, y: mousePosition.y - 8 }}
-      transition={{ type: "tween", ease: "backOut", duration: 0.1 }}
-      style={{ boxShadow: '0 0 10px 2px rgba(0, 255, 102, 0.4)' }}
+      animate={{
+        x: position.x - 10,
+        y: position.y - 10,
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 600,
+        damping: 30,
+      }}
+      className="
+      fixed
+      top-0
+      left-0
+      w-5
+      h-5
+      rounded-full
+      bg-green-400
+      pointer-events-none
+      z-[9999]
+      shadow-[0_0_20px_#00ff88]"
     />
   );
 }
