@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 
 export default function SkillCard({
   title,
-  level,
   description
 }) {
   return (
@@ -24,29 +23,11 @@ export default function SkillCard({
       hover:shadow-[0_0_25px_rgba(0,245,212,.18)]
       transition-all"
     >
-      <div className="flex justify-between mb-4">
+      <div className="mb-4">
 
         <h3 className="text-xl font-bold text-primary">
           {title}
         </h3>
-
-        <span className="text-secondary">
-          {level}%
-        </span>
-
-      </div>
-
-      <div className="w-full h-2 rounded-full bg-onyx overflow-hidden">
-
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 1.2,
-          }}
-          className="h-full bg-secondary"
-        />
 
       </div>
 

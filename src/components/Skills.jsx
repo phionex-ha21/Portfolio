@@ -5,42 +5,36 @@ const skills = [
 
   {
     title: "Python",
-    level: 90,
     description:
       "Automation, scripting, networking tools and backend fundamentals."
   },
 
   {
     title: "Cyber Security",
-    level: 88,
     description:
       "Web security, vulnerability assessment, penetration testing and OWASP."
   },
 
   {
     title: "Networking",
-    level: 82,
     description:
       "TCP/IP, DNS, HTTP, Wireshark, packet analysis and troubleshooting."
   },
 
   {
     title: "React",
-    level: 78,
     description:
       "Modern UI development using React, Vite and TailwindCSS."
   },
 
   {
     title: "Postman",
-    level: 85,
     description:
       "REST API testing, collections, debugging and validation."
   },
 
   {
     title: "QA Testing",
-    level: 87,
     description:
       "Manual testing, bug reporting, usability testing and functional testing."
   }
