@@ -15,7 +15,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
 
-          <p className="text-violet-500 mb-4 tracking-[4px]">
+          <p className="text-secondary mb-4 tracking-[4px]">
             INITIALIZING USER...
           </p>
 
@@ -25,13 +25,13 @@ export default function Hero() {
 
             <br />
 
-            <span className="text-violet-400">
+            <span className="text-primary">
               YADAV
             </span>
 
           </h1>
 
-          <div className="mt-8 space-y-3 text-lg text-violet-300">
+          <div className="mt-8 space-y-3 text-lg text-white">
 
             <p>&gt; Cyber Security Student</p>
 
@@ -43,7 +43,7 @@ export default function Hero() {
 
           </div>
 
-          <p className="mt-10 text-gray-400 leading-8 max-w-xl">
+          <p className="mt-10 text-white leading-8 max-w-xl">
 
             Passionate about Cyber Security, Penetration Testing,
             Web Development and building secure applications.
@@ -57,8 +57,8 @@ export default function Hero() {
             <a
               href="#projects"
               className="flex items-center gap-3
-              bg-green-500
-              text-black
+              bg-primary
+              text-white
               px-8
               py-4
               rounded-lg
@@ -74,15 +74,15 @@ export default function Hero() {
             <a
               href="/Madhav Yadav.pdf"
               className="border
-              border-green-500
+              border-secondary
               px-8
               py-4
               rounded-lg
               flex
               items-center
               gap-3
-              hover:bg-green-500
-              hover:text-black
+              hover:bg-secondary
+              hover:text-onyx
               transition"
               download
             >
@@ -103,19 +103,19 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
 
-          <div className="rounded-xl border border-green-500 overflow-hidden shadow-[0_0_40px_rgba(0,255,120,.2)]">
+          <div className="rounded-xl border border-primary overflow-hidden shadow-[0_0_40px_rgba(127,0,255,.28)]">
 
-            <div className="bg-black border-b border-green-500 px-5 py-3 flex gap-2">
+            <div className="bg-onyx border-b border-secondary px-5 py-3 flex gap-2">
 
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
+              <div className="w-3 h-3 rounded-full bg-primary"></div>
 
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-secondary"></div>
 
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              <div className="w-3 h-3 rounded-full bg-white"></div>
 
             </div>
 
-            <div className="bg-[#050505] p-8 font-mono text-violet-400 leading-8">
+            <div className="bg-onyx p-8 font-mono text-secondary leading-8">
 
               <p>$ whoami</p>
 
@@ -140,7 +140,7 @@ export default function Hero() {
 
               <p>$ status</p>
 
-              <p className="text-violet-300">
+              <p className="text-primary">
                 Building Secure Systems...
               </p>
 

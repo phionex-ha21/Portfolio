@@ -31,17 +31,17 @@ export default function LoadingScreen() {
 
   return (
     <motion.div
-      className="fixed inset-0 bg-black flex items-center justify-center z-[999]"
+      className="fixed inset-0 bg-onyx flex items-center justify-center z-[999]"
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
     >
       <div className="w-full max-w-3xl px-8">
 
-        <h2 className="text-3xl text-violet-400 font-bold mb-10 font-mono">
+        <h2 className="text-3xl text-primary font-bold mb-10 font-mono">
           CYBER TERMINAL
         </h2>
 
-        <div className="font-mono space-y-3 text-violet-500">
+        <div className="font-mono space-y-3 text-secondary">
 
           {visibleLines.map((line, index) => (
             <motion.p

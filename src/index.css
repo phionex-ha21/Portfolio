@@ -5,12 +5,12 @@
 @tailwind utilities;
 
 html, body {
-  @apply bg-matte text-white font-sans antialiased overflow-x-hidden;
+  @apply bg-onyx text-white font-sans antialiased overflow-x-hidden;
   cursor: none; /* Hide default cursor for custom one */
 }
 
 ::selection {
-  @apply bg-neon text-matte;
+  @apply bg-secondary text-onyx;
 }
 
 /* Custom Scrollbar for fallback */
@@ -18,11 +18,11 @@ html, body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #050505;
+  background: #0B0C10;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1A1A1A;
+  background: #1F2833;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0051ff;
+  background: #00F5D4;
 }

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function CyberBackground() {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden bg-black">
+    <div className="fixed inset-0 -z-10 overflow-hidden bg-onyx">
 
       {/* Grid */}
 
@@ -10,8 +10,8 @@ export default function CyberBackground() {
         className="absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(0,255,120,.4) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,255,120,.4) 1px, transparent 1px)
+            linear-gradient(rgba(0,245,212,.28) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,245,212,.28) 1px, transparent 1px)
           `,
           backgroundSize: "60px 60px",
         }}
@@ -30,7 +30,7 @@ export default function CyberBackground() {
         }}
         className="absolute w-[450px] h-[450px]
         rounded-full
-        bg-green-500/10
+        bg-primary/15
         blur-[140px]
         top-[-120px]
         left-[-100px]"
@@ -49,7 +49,7 @@ export default function CyberBackground() {
         }}
         className="absolute w-[500px] h-[500px]
         rounded-full
-        bg-green-400/10
+        bg-secondary/10
         blur-[150px]
         bottom-[-180px]
         right-[-120px]"
@@ -61,7 +61,7 @@ export default function CyberBackground() {
         className="absolute inset-0 opacity-[0.04]"
         style={{
           background:
-            "repeating-linear-gradient(180deg, transparent 0px, transparent 3px, rgba(0,255,120,.25) 4px)",
+            "repeating-linear-gradient(180deg, transparent 0px, transparent 3px, rgba(0,245,212,.18) 4px)",
         }}
       />
 

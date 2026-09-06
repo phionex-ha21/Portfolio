@@ -15,28 +15,28 @@ export default function SkillCard({
         duration: 0.25,
       }}
       className="
-      bg-[#070707]
+      bg-slate
       border
-      border-green-500/20
+      border-primary/20
       rounded-xl
       p-6
-      hover:border-green-400
-      hover:shadow-[0_0_25px_rgba(0,255,120,.15)]
+      hover:border-secondary
+      hover:shadow-[0_0_25px_rgba(0,245,212,.18)]
       transition-all"
     >
       <div className="flex justify-between mb-4">
 
-        <h3 className="text-xl font-bold text-violet-300">
+        <h3 className="text-xl font-bold text-primary">
           {title}
         </h3>
 
-        <span className="text-violet-500">
+        <span className="text-secondary">
           {level}%
         </span>
 
       </div>
 
-      <div className="w-full h-2 rounded-full bg-[#111] overflow-hidden">
+      <div className="w-full h-2 rounded-full bg-onyx overflow-hidden">
 
         <motion.div
           initial={{ width: 0 }}
@@ -45,12 +45,12 @@ export default function SkillCard({
           transition={{
             duration: 1.2,
           }}
-          className="h-full bg-green-500"
+          className="h-full bg-secondary"
         />
 
       </div>
 
-      <p className="text-gray-400 mt-5 text-sm leading-7">
+      <p className="text-white mt-5 text-sm leading-7">
         {description}
       </p>
 

@@ -41,11 +41,11 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-green-500/20 bg-black/70">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-primary/20 bg-onyx/85">
 
       <div className="max-w-7xl mx-auto h-20 px-8 flex justify-between items-center">
 
-        <h1 className="text-2xl font-bold tracking-widest text-violet-400">
+        <h1 className="text-2xl font-bold tracking-widest text-primary">
           &lt;MADHAV /&gt;
         </h1>
 
@@ -55,10 +55,10 @@ export default function Navbar() {
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className={`transition duration-300 hover:text-violet-300 ${
+              className={`transition duration-300 hover:text-secondary ${
                 active === item.id
-                  ? "text-violet-400"
-                  : "text-violet-700"
+                  ? "text-primary"
+                  : "text-white"
               }`}
             >
               {item.name}
@@ -73,7 +73,7 @@ export default function Navbar() {
             href="https://github.com/phionex-ha21"
             target="_blank"
             rel="noreferrer"
-            className="text-violet-500 hover:text-violet-300 transition"
+            className="text-secondary hover:text-white transition"
           >
             <FiGithub size={22} />
           </a>
@@ -82,7 +82,7 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/madhav-yadav-761800206"
             target="_blank"
             rel="noreferrer"
-            className="text-violet-500 hover:text-violet-300 transition"
+            className="text-secondary hover:text-white transition"
           >
             <FiLinkedin size={22} />
           </a>

@@ -12,12 +12,12 @@ export default function ProjectCard({
     <motion.div
       whileHover={{ y: -10 }}
       transition={{ duration: 0.3 }}
-      className="group bg-[#080808] border border-green-500/20 rounded-2xl overflow-hidden hover:border-green-400 hover:shadow-[0_0_35px_rgba(0,255,120,.18)] transition-all"
+      className="group bg-slate border border-primary/20 rounded-2xl overflow-hidden hover:border-secondary hover:shadow-[0_0_35px_rgba(0,245,212,.2)] transition-all"
     >
       {/* Image Placeholder */}
-      <div className="h-52 bg-gradient-to-br from-[#0a0a0a] to-[#111] flex items-center justify-center border-b border-green-500/20">
+      <div className="h-52 bg-gradient-to-br from-onyx to-slate flex items-center justify-center border-b border-primary/20">
 
-        <span className="text-6xl text-violet-500 opacity-20">
+        <span className="text-6xl text-secondary opacity-30">
           {"</>"}
         </span>
 
@@ -25,11 +25,11 @@ export default function ProjectCard({
 
       <div className="p-7">
 
-        <h3 className="text-2xl font-bold text-violet-300">
+        <h3 className="text-2xl font-bold text-primary">
           {title}
         </h3>
 
-        <p className="mt-4 text-gray-400 leading-7">
+        <p className="mt-4 text-white leading-7">
           {description}
         </p>
 
@@ -38,7 +38,7 @@ export default function ProjectCard({
           {tech.map((item) => (
             <span
               key={item}
-              className="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-sm text-violet-300"
+              className="px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-sm text-secondary"
             >
               {item}
             </span>
@@ -52,7 +52,7 @@ export default function ProjectCard({
             href={github}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 px-5 py-3 border border-green-500 rounded-lg hover:bg-green-500 hover:text-black transition"
+            className="flex items-center gap-2 px-5 py-3 border border-secondary rounded-lg hover:bg-secondary hover:text-onyx transition"
           >
             <FiGithub />
 
@@ -63,7 +63,7 @@ export default function ProjectCard({
             href={live}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 px-5 py-3 bg-green-500 text-black rounded-lg hover:scale-105 transition"
+            className="flex items-center gap-2 px-5 py-3 bg-primary text-white rounded-lg hover:bg-secondary hover:text-onyx transition"
           >
             <FiExternalLink />
 

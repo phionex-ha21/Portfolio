@@ -12,9 +12,9 @@ export default function Contact() {
           subtitle="LET'S CONNECT"
         />
 
-        <div className="bg-[#070707] border border-green-500/20 rounded-2xl p-10">
+        <div className="bg-slate border border-primary/20 rounded-2xl p-10">
 
-          <p className="text-gray-400 leading-8 mb-10">
+          <p className="text-white leading-8 mb-10">
 
             Interested in collaborating, internships,
             cybersecurity, development or freelance work?
@@ -26,7 +26,7 @@ export default function Contact() {
 
             <a
               href="mailto:your@email.com"
-              className="flex items-center gap-4 hover:text-violet-300"
+              className="flex items-center gap-4 text-white hover:text-secondary"
             >
               <FiMail />
 
@@ -37,7 +37,7 @@ export default function Contact() {
               href="https://github.com/phionex-ha21"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 hover:text-violet-300"
+              className="flex items-center gap-4 text-white hover:text-secondary"
             >
               <FiGithub />
 
@@ -48,7 +48,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/madhav-yadav-761800206"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 hover:text-violet-300"
+              className="flex items-center gap-4 text-white hover:text-secondary"
             >
               <FiLinkedin />
 

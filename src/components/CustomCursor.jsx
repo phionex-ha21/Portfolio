@@ -38,10 +38,10 @@ export default function CustomCursor() {
       w-5
       h-5
       rounded-full
-      bg-green-400
+      bg-secondary
       pointer-events-none
       z-[9999]
-      shadow-[0_0_20px_#00ff88]"
+      shadow-[0_0_20px_#00F5D4]"
     />
   );
 }

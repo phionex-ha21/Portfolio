@@ -4,10 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        matte: "#050505",
-        surface: "#0A0A0A",
-        neon: "#00FF66",
-        borderDark: "#1A1A1A",
+        matte: "#0B0C10",
+        onyx: "#0B0C10",
+        surface: "#1F2833",
+        slate: "#1F2833",
+        primary: "#7F00FF",
+        secondary: "#00F5D4",
+        neon: "#00F5D4",
+        borderDark: "#334155",
       },
       fontFamily: {
         mono: ['"JetBrains Mono"', 'monospace'],

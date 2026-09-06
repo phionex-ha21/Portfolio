@@ -36,7 +36,7 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="relative bg-black text-violet-400 overflow-x-hidden"
+            className="relative bg-onyx text-white overflow-x-hidden"
           >
             <CyberBackground />
 

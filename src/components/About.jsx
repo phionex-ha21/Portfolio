@@ -43,7 +43,7 @@ export default function About() {
 
           >
 
-            <h3 className="text-4xl font-bold text-violet-300 mb-8">
+            <h3 className="text-4xl font-bold text-primary mb-8">
 
               Hello,
 
@@ -53,7 +53,7 @@ export default function About() {
 
             </h3>
 
-            <p className="text-gray-400 leading-9">
+            <p className="text-white leading-9">
 
               I'm currently pursuing BCA (Hons.) in Cyber Security.
 
@@ -70,7 +70,7 @@ export default function About() {
 
               <div>
 
-                <p className="text-violet-500">Location</p>
+                <p className="text-secondary">Location</p>
 
                 <p>Ghaziabad, India</p>
 
@@ -78,7 +78,7 @@ export default function About() {
 
               <div>
 
-                <p className="text-violet-500">Experience</p>
+                <p className="text-secondary">Experience</p>
 
                 <p>QA Testing & Web Management</p>
 
@@ -86,7 +86,7 @@ export default function About() {
 
               <div>
 
-                <p className="text-violet-500">Education</p>
+                <p className="text-secondary">Education</p>
 
                 <p>BCA Cyber Security</p>
 
@@ -94,7 +94,7 @@ export default function About() {
 
               <div>
 
-                <p className="text-violet-500">Focus</p>
+                <p className="text-secondary">Focus</p>
 
                 <p>Cyber Security</p>
 
@@ -120,11 +120,11 @@ export default function About() {
 
                 key={index}
 
-                className="border border-green-500/20 rounded-xl p-8 bg-[#070707] hover:border-green-500 transition"
+                className="border border-secondary/20 rounded-xl p-8 bg-slate hover:border-secondary transition"
 
               >
 
-                <div className="text-violet-400 mb-5">
+                <div className="text-primary mb-5">
 
                   {item.icon}
 
@@ -136,7 +136,7 @@ export default function About() {
 
                 </h4>
 
-                <p className="text-gray-400">
+                <p className="text-white">
 
                   {item.desc}
 

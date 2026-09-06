@@ -26,7 +26,7 @@ export default function Experience() {
           subtitle="CAREER"
         />
 
-        <div className="relative border-l border-green-500/30 ml-4">
+        <div className="relative border-l border-primary/30 ml-4">
 
           {experience.map((item, index) => (
 
@@ -39,9 +39,9 @@ export default function Experience() {
               className="mb-12 ml-8"
             >
 
-              <div className="absolute -left-[11px] w-5 h-5 rounded-full bg-green-500"></div>
+              <div className="absolute -left-[11px] w-5 h-5 rounded-full bg-secondary"></div>
 
-              <span className="text-violet-500">
+              <span className="text-secondary">
                 {item.period}
               </span>
 
@@ -49,11 +49,11 @@ export default function Experience() {
                 {item.role}
               </h3>
 
-              <h4 className="text-violet-300 mb-4">
+              <h4 className="text-primary mb-4">
                 {item.company}
               </h4>
 
-              <p className="text-gray-400 leading-8">
+              <p className="text-white leading-8">
                 {item.desc}
               </p>
 
