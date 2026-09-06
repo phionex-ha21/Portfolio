@@ -17,7 +17,7 @@ export default function ProjectCard({
       {/* Image Placeholder */}
       <div className="h-52 bg-gradient-to-br from-[#0a0a0a] to-[#111] flex items-center justify-center border-b border-green-500/20">
 
-        <span className="text-6xl text-green-500 opacity-20">
+        <span className="text-6xl text-violet-500 opacity-20">
           {"</>"}
         </span>
 
@@ -25,7 +25,7 @@ export default function ProjectCard({
 
       <div className="p-7">
 
-        <h3 className="text-2xl font-bold text-green-300">
+        <h3 className="text-2xl font-bold text-violet-300">
           {title}
         </h3>
 
@@ -38,7 +38,7 @@ export default function ProjectCard({
           {tech.map((item) => (
             <span
               key={item}
-              className="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-sm text-green-300"
+              className="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-sm text-violet-300"
             >
               {item}
             </span>

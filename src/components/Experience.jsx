@@ -41,7 +41,7 @@ export default function Experience() {
 
               <div className="absolute -left-[11px] w-5 h-5 rounded-full bg-green-500"></div>
 
-              <span className="text-green-500">
+              <span className="text-violet-500">
                 {item.period}
               </span>
 
@@ -49,7 +49,7 @@ export default function Experience() {
                 {item.role}
               </h3>
 
-              <h4 className="text-green-300 mb-4">
+              <h4 className="text-violet-300 mb-4">
                 {item.company}
               </h4>
 

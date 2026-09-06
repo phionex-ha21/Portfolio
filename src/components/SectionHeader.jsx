@@ -9,11 +9,11 @@ export default function SectionHeader({ title, subtitle }) {
       transition={{ duration: .7 }}
       className="mb-20 text-center"
     >
-      <p className="uppercase tracking-[6px] text-green-500 mb-3">
+      <p className="uppercase tracking-[6px] text-violet-500 mb-3">
         {subtitle}
       </p>
 
-      <h2 className="text-5xl font-black text-green-300">
+      <h2 className="text-5xl font-black text-violet-300">
         {title}
       </h2>
 

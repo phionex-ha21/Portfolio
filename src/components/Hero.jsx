@@ -15,7 +15,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
 
-          <p className="text-green-500 mb-4 tracking-[4px]">
+          <p className="text-violet-500 mb-4 tracking-[4px]">
             INITIALIZING USER...
           </p>
 
@@ -25,13 +25,13 @@ export default function Hero() {
 
             <br />
 
-            <span className="text-green-400">
+            <span className="text-violet-400">
               YADAV
             </span>
 
           </h1>
 
-          <div className="mt-8 space-y-3 text-lg text-green-300">
+          <div className="mt-8 space-y-3 text-lg text-violet-300">
 
             <p>&gt; Cyber Security Student</p>
 
@@ -115,7 +115,7 @@ export default function Hero() {
 
             </div>
 
-            <div className="bg-[#050505] p-8 font-mono text-green-400 leading-8">
+            <div className="bg-[#050505] p-8 font-mono text-violet-400 leading-8">
 
               <p>$ whoami</p>
 
@@ -140,7 +140,7 @@ export default function Hero() {
 
               <p>$ status</p>
 
-              <p className="text-green-300">
+              <p className="text-violet-300">
                 Building Secure Systems...
               </p>
 

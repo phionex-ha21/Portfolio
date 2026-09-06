@@ -26,11 +26,11 @@ export default function SkillCard({
     >
       <div className="flex justify-between mb-4">
 
-        <h3 className="text-xl font-bold text-green-300">
+        <h3 className="text-xl font-bold text-violet-300">
           {title}
         </h3>
 
-        <span className="text-green-500">
+        <span className="text-violet-500">
           {level}%
         </span>
 

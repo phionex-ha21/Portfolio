@@ -45,7 +45,7 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto h-20 px-8 flex justify-between items-center">
 
-        <h1 className="text-2xl font-bold tracking-widest text-green-400">
+        <h1 className="text-2xl font-bold tracking-widest text-violet-400">
           &lt;MADHAV /&gt;
         </h1>
 
@@ -55,10 +55,10 @@ export default function Navbar() {
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className={`transition duration-300 hover:text-green-300 ${
+              className={`transition duration-300 hover:text-violet-300 ${
                 active === item.id
-                  ? "text-green-400"
-                  : "text-green-700"
+                  ? "text-violet-400"
+                  : "text-violet-700"
               }`}
             >
               {item.name}
@@ -73,7 +73,7 @@ export default function Navbar() {
             href="https://github.com/phionex-ha21"
             target="_blank"
             rel="noreferrer"
-            className="text-green-500 hover:text-green-300 transition"
+            className="text-violet-500 hover:text-violet-300 transition"
           >
             <FiGithub size={22} />
           </a>
@@ -82,7 +82,7 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/madhav-yadav-761800206"
             target="_blank"
             rel="noreferrer"
-            className="text-green-500 hover:text-green-300 transition"
+            className="text-violet-500 hover:text-violet-300 transition"
           >
             <FiLinkedin size={22} />
           </a>

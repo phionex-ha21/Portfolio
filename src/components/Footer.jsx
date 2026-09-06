@@ -8,7 +8,7 @@ export default function Footer() {
 
       </p>
 
-      <p className="text-green-500 mt-2">
+      <p className="text-violet-500 mt-2">
 
         Built with React • Tailwind CSS • Framer Motion
 

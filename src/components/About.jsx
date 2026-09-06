@@ -43,7 +43,7 @@ export default function About() {
 
           >
 
-            <h3 className="text-4xl font-bold text-green-300 mb-8">
+            <h3 className="text-4xl font-bold text-violet-300 mb-8">
 
               Hello,
 
@@ -70,7 +70,7 @@ export default function About() {
 
               <div>
 
-                <p className="text-green-500">Location</p>
+                <p className="text-violet-500">Location</p>
 
                 <p>Ghaziabad, India</p>
 
@@ -78,7 +78,7 @@ export default function About() {
 
               <div>
 
-                <p className="text-green-500">Experience</p>
+                <p className="text-violet-500">Experience</p>
 
                 <p>QA Testing & Web Management</p>
 
@@ -86,7 +86,7 @@ export default function About() {
 
               <div>
 
-                <p className="text-green-500">Education</p>
+                <p className="text-violet-500">Education</p>
 
                 <p>BCA Cyber Security</p>
 
@@ -94,7 +94,7 @@ export default function About() {
 
               <div>
 
-                <p className="text-green-500">Focus</p>
+                <p className="text-violet-500">Focus</p>
 
                 <p>Cyber Security</p>
 
@@ -124,7 +124,7 @@ export default function About() {
 
               >
 
-                <div className="text-green-400 mb-5">
+                <div className="text-violet-400 mb-5">
 
                   {item.icon}
 

@@ -37,11 +37,11 @@ export default function LoadingScreen() {
     >
       <div className="w-full max-w-3xl px-8">
 
-        <h2 className="text-3xl text-green-400 font-bold mb-10 font-mono">
+        <h2 className="text-3xl text-violet-400 font-bold mb-10 font-mono">
           CYBER TERMINAL
         </h2>
 
-        <div className="font-mono space-y-3 text-green-500">
+        <div className="font-mono space-y-3 text-violet-500">
 
           {visibleLines.map((line, index) => (
             <motion.p

@@ -26,7 +26,7 @@ export default function Contact() {
 
             <a
               href="mailto:your@email.com"
-              className="flex items-center gap-4 hover:text-green-300"
+              className="flex items-center gap-4 hover:text-violet-300"
             >
               <FiMail />
 
@@ -37,7 +37,7 @@ export default function Contact() {
               href="https://github.com/phionex-ha21"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 hover:text-green-300"
+              className="flex items-center gap-4 hover:text-violet-300"
             >
               <FiGithub />
 
@@ -48,7 +48,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/madhav-yadav-761800206"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 hover:text-green-300"
+              className="flex items-center gap-4 hover:text-violet-300"
             >
               <FiLinkedin />
 
