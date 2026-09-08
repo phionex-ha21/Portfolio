@@ -72,50 +72,68 @@ body {
 .cinematic-title {
   position: relative;
   display: inline-block;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #edf2ff;
-  text-shadow: 0 0 12px rgba(255,255,255,0.7), 0 0 22px rgba(214, 228, 255, 0.22), 0 0 30px rgba(255, 98, 190, 0.1);
+  color: #f3f5f9;
+  text-shadow: 0 0 16px rgba(255,255,255,0.75), 0 0 24px rgba(255,255,255,0.2);
   will-change: transform, opacity, filter;
   animation: revealIn 1.15s cubic-bezier(0.2, 0.9, 0.2, 1) both, softGlow 6s ease-in-out infinite alternate;
 }
 
-.cinematic-kicker::before,
-.cinematic-kicker::after,
-.cinematic-title::before,
-.cinematic-title::after {
-  content: attr(data-text);
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  white-space: pre;
-  mix-blend-mode: screen;
+.cinematic-kicker {
+  font-weight: 600;
+  text-shadow: 0 0 12px rgba(255,255,255,0.3), 0 0 18px rgba(255,255,255,0.12);
 }
 
-.cinematic-kicker::before,
-.cinematic-title::before {
-  color: rgba(255, 103, 196, 0.44);
-  transform: translate3d(-1px, 0, 0);
-  animation: glitchLayerA 3.8s ease-in-out infinite 0.9s;
+.hero-title-block {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
-.cinematic-kicker::after,
-.cinematic-title::after {
-  color: rgba(142, 205, 255, 0.44);
-  transform: translate3d(1px, 0, 0);
-  animation: glitchLayerB 4.1s ease-in-out infinite 0.9s;
+.status-led {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: #2ef2d3;
+  box-shadow: 0 0 16px rgba(46, 242, 211, 0.8), 0 0 28px rgba(46, 242, 211, 0.45);
+  margin-bottom: 2.4rem;
 }
 
-.cinematic-brand::before,
-.cinematic-brand::after {
-  content: none;
-  display: none;
+.hero-title-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-lower-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-top: 0.25rem;
+}
+
+.cinematic-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -0.08em;
+  font-size: clamp(4.8rem, 11vw, 13rem);
+  margin: 0;
+}
+
+.cinematic-title.second-line {
+  margin-bottom: 0.2rem;
 }
 
 .cinematic-kicker {
-  font-weight: 600;
-  text-shadow: 0 0 12px rgba(255,255,255,0.42), 0 0 20px rgba(255, 82, 170, 0.22);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
+  letter-spacing: 0.06em;
+  margin: 0;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.92);
 }
 
 @keyframes revealIn {
@@ -146,26 +164,6 @@ body {
   50% {
     text-shadow: 0 0 14px rgba(255,255,255,0.85), 0 0 24px rgba(208, 220, 255, 0.34), 0 0 28px rgba(255, 86, 188, 0.12);
   }
-}
-
-@keyframes glitchLayerA {
-  0%, 100% { opacity: 0; transform: translate3d(0, 0, 0); }
-  10% { opacity: 0.18; transform: translate3d(-1px, 0, 0); }
-  11% { opacity: 0; }
-  16% { opacity: 0.28; transform: translate3d(-2px, 1px, 0); }
-  17% { opacity: 0; }
-  62% { opacity: 0.14; transform: translate3d(1px, 0, 0); }
-  63% { opacity: 0; }
-}
-
-@keyframes glitchLayerB {
-  0%, 100% { opacity: 0; transform: translate3d(0, 0, 0); }
-  12% { opacity: 0.15; transform: translate3d(2px, 0, 0); }
-  13% { opacity: 0; }
-  18% { opacity: 0.22; transform: translate3d(1px, -1px, 0); }
-  19% { opacity: 0; }
-  64% { opacity: 0.12; transform: translate3d(-1px, 1px, 0); }
-  65% { opacity: 0; }
 }
 
 @keyframes smokeDrift {

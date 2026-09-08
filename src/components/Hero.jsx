@@ -26,27 +26,25 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
 
-          <p
-            className="cinematic-kicker text-secondary mb-4 tracking-[4px]"
-            data-text="INITIALIZING USER..."
-          >
-            INITIALIZING USER...
-          </p>
+          <div className="hero-title-block">
+            <span className="status-led" aria-hidden="true" />
 
-          <h1
-            className="cinematic-title text-6xl md:text-7xl font-black leading-tight"
-            data-text="MADHAV"
-          >
+            <div className="hero-title-stack">
+              <h1 className="cinematic-title" data-text="MADHAV">
+                MADHAV
+              </h1>
 
-            MADHAV
+              <div className="hero-lower-row">
+                <p className="cinematic-kicker" data-text="INITIALIZING USER...">
+                  INITIALIZING USER...
+                </p>
 
-            <br />
-
-            <span className="cinematic-title" data-text="YADAV">
-              YADAV
-            </span>
-
-          </h1>
+                <h1 className="cinematic-title second-line" data-text="YADAV">
+                  YADAV
+                </h1>
+              </div>
+            </div>
+          </div>
 
           <div className="mt-8 space-y-3 text-lg text-white">
 
