@@ -2,97 +2,33 @@ import SectionHeader from "./SectionHeader";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
-
   {
-    title: "Athlete Performance Tracking System",
-
+    title: "Hand Gesture Recognition",
     description:
-      "AI-powered fitness tracking application using computer vision to monitor athlete performance and count exercises in real-time.",
-
-    tech: [
-      "Python",
-      "OpenCV",
-      "Flask",
-      "MediaPipe"
-    ],
-
-    github: "https://github.com/phionex-ha21",
-
-    live: "#"
+      "Real-time hand gesture recognition built with MediaPipe and OpenCV, with a browser-based frontend for interactive gesture tracking.",
+    tech: ["Python", "OpenCV", "MediaPipe", "React"],
+    github: "https://github.com/phionex-ha21/Hand-Gesture",
   },
-
   {
-    title: "Cyber Portfolio",
-
+    title: "Doom Scroller",
     description:
-      "Modern hacker-themed portfolio built with React, Tailwind CSS and Framer Motion.",
-
-    tech: [
-      "React",
-      "Tailwind",
-      "Framer Motion"
-    ],
-
-    github: "https://github.com/phionex-ha21",
-
-    live: "#"
-  },
-
-  {
-    title: "Network Analysis Toolkit",
-
-    description:
-      "Collection of networking and packet analysis utilities for cybersecurity learning.",
-
-    tech: [
-      "Python",
-      "Networking",
-      "Wireshark"
-    ],
-
-    github: "https://github.com/phionex-ha21",
-
-    live: "#"
+      "A compact Windows utility that automatically scrolls the active browser window with adjustable speed and a responsive Tkinter control panel.",
+    tech: ["Python", "Tkinter", "PyAutoGUI", "Threading"],
+    github: "https://github.com/phionex-ha21/Doom-Scroller",
   }
-
 ];
 
 export default function Projects() {
-
   return (
-
-    <section className="py-32 px-8">
-
-      <div className="max-w-7xl mx-auto">
-
-        <SectionHeader
-
-          title="PROJECTS"
-
-          subtitle="MY WORK"
-
-        />
-
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-10">
-
+    <section className="px-8 py-32">
+      <div className="mx-auto max-w-7xl">
+        <SectionHeader title="PROJECTS" subtitle="MY WORK" />
+        <div className="grid gap-10 lg:grid-cols-2">
           {projects.map((project) => (
-
-            <ProjectCard
-
-              key={project.title}
-
-              {...project}
-
-            />
-
+            <ProjectCard key={project.title} {...project} />
           ))}
-
         </div>
-
       </div>
-
     </section>
-
   );
-
 }

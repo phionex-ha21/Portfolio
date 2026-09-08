@@ -59,16 +59,17 @@ export default function ProjectCard({
             GitHub
           </a>
 
-          <a
-            href={live}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 px-5 py-3 bg-primary text-white rounded-lg hover:bg-secondary hover:text-onyx transition"
-          >
-            <FiExternalLink />
-
-            Live
-          </a>
+          {live && live !== "#" && (
+            <a
+              href={live}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 px-5 py-3 bg-primary text-white rounded-lg hover:bg-secondary hover:text-onyx transition"
+            >
+              <FiExternalLink />
+              Live
+            </a>
+          )}
 
         </div>
 
