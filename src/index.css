@@ -9,38 +9,208 @@ html, body {
   cursor: none; /* Hide default cursor for custom one */
 }
 
-h1, h2, h3, h4, .brand-name, .gradient-title {
+body {
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 20%, rgba(255, 82, 170, 0.1), transparent 20%),
+    linear-gradient(180deg, #070a12 0%, #0b0d13 100%);
+}
+
+.hero-shell {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.12), transparent 18%),
+    radial-gradient(circle at 80% 25%, rgba(255, 87, 180, 0.16), transparent 20%),
+    linear-gradient(135deg, rgba(7, 10, 18, 0.95), rgba(11, 13, 19, 0.8));
+}
+
+.hero-atmosphere {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(12px);
+}
+
+.smoke,
+.particle {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.smoke {
+  width: 34rem;
+  height: 34rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.12), rgba(255,255,255,0.03) 35%, transparent 65%);
+  opacity: 0.45;
+  animation: smokeDrift 22s ease-in-out infinite alternate;
+}
+
+.smoke-1 { left: -6rem; bottom: -10rem; }
+.smoke-2 { right: -7rem; top: 2rem; animation-delay: -11s; }
+
+.particle {
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 0 12px rgba(255,255,255,0.7), 0 0 20px rgba(255, 90, 190, 0.35);
+  animation: particleFloat 12s ease-in-out infinite;
+}
+
+.particle-1 { left: 18%; top: 22%; animation-delay: 0s; }
+.particle-2 { left: 36%; top: 58%; animation-delay: 2.6s; }
+.particle-3 { left: 48%; top: 32%; animation-delay: 5.1s; }
+.particle-4 { left: 66%; top: 70%; animation-delay: 1.4s; }
+.particle-5 { left: 78%; top: 26%; animation-delay: 4.3s; }
+.particle-6 { left: 88%; top: 52%; animation-delay: 3.4s; }
+
+.cinematic-brand,
+.cinematic-kicker,
+.cinematic-title {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f7f9ff;
+  text-shadow: 0 0 16px rgba(255,255,255,0.7), 0 0 30px rgba(255, 86, 188, 0.18);
+  transform: translate3d(0, 0, 0);
+  animation: cinematicEntrance 1.2s cubic-bezier(0.18, 0.9, 0.2, 1) both;
+}
+
+.cinematic-brand::before,
+.cinematic-kicker::before,
+.cinematic-title::before,
+.cinematic-brand::after,
+.cinematic-kicker::after,
+.cinematic-title::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+
+.cinematic-brand::before,
+.cinematic-kicker::before,
+.cinematic-title::before {
+  color: rgba(255, 96, 196, 0.8);
+  transform: translate(-2px, 0);
+  clip-path: inset(0 0 52% 0);
+  animation: chromaShift 3s ease-in-out infinite alternate;
+}
+
+.cinematic-brand::after,
+.cinematic-kicker::after,
+.cinematic-title::after {
+  color: rgba(101, 206, 255, 0.8);
+  transform: translate(2px, 0);
+  clip-path: inset(50% 0 0 0);
+  animation: chromaShiftAlt 3.2s ease-in-out infinite alternate;
+}
+
+.cinematic-brand,
+.cinematic-title {
   background: linear-gradient(90deg,
-    #fffaf3 0%,
-    #f8d7a0 12%,
-    #f0b868 24%,
-    #dff8ff 42%,
-    #fff4e6 58%,
-    #f7d093 74%,
-    #ecf8ff 100%);
+    #fffdfb 0%,
+    #f3eedf 12%,
+    #f6d6a3 20%,
+    #fffefc 36%,
+    #fff5ea 50%,
+    #f8d7a6 64%,
+    #dff8ff 80%,
+    #ffffff 100%);
   background-size: 220% 100%;
   background-position: 0% 50%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 18px rgba(247, 192, 106, 0.2));
-  animation: shimmerText 6s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 16px rgba(255,255,255,0.6));
+  animation:
+    shimmerText 5.5s ease-in-out infinite alternate,
+    cinematicEntrance 1.2s cubic-bezier(0.18, 0.9, 0.2, 1) both,
+    flickerText 7s steps(1, end) infinite 1.4s;
+}
+
+.cinematic-kicker {
+  font-weight: 600;
+  text-shadow: 0 0 12px rgba(255,255,255,0.4), 0 0 20px rgba(255, 82, 170, 0.25);
 }
 
 @keyframes shimmerText {
   0% {
     background-position: 0% 50%;
-    filter: drop-shadow(0 0 12px rgba(247, 192, 106, 0.18));
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.45));
   }
-  50% {
-    background-position: 55% 50%;
-    filter: drop-shadow(0 0 20px rgba(202, 236, 255, 0.25));
+  35% {
+    background-position: 42% 50%;
+    filter: drop-shadow(0 0 16px rgba(255,255,255,0.65));
   }
   100% {
     background-position: 100% 50%;
-    filter: drop-shadow(0 0 18px rgba(247, 192, 106, 0.24));
+    filter: drop-shadow(0 0 18px rgba(255,255,255,0.8));
   }
+}
+
+@keyframes cinematicEntrance {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0) scale(0.96);
+    filter: blur(10px);
+  }
+  55% {
+    opacity: 1;
+    transform: translate3d(0, -6px, 0) scale(1.02);
+    filter: blur(0px);
+  }
+  75% {
+    transform: translate3d(0, 2px, 0) scale(0.995);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes chromaShift {
+  0%, 100% { transform: translate(-2px, 0); opacity: 0.15; }
+  20% { transform: translate(-4px, 1px); opacity: 0.8; }
+  50% { transform: translate(2px, -1px); opacity: 1; }
+  80% { transform: translate(-1px, 2px); opacity: 0.7; }
+}
+
+@keyframes chromaShiftAlt {
+  0%, 100% { transform: translate(2px, 0); opacity: 0.14; }
+  25% { transform: translate(5px, -1px); opacity: 0.8; }
+  55% { transform: translate(-2px, 1px); opacity: 1; }
+  85% { transform: translate(1px, -2px); opacity: 0.7; }
+}
+
+@keyframes flickerText {
+  0%, 10%, 12%, 100% { opacity: 1; }
+  11% { opacity: 0.28; }
+  13% { opacity: 0.9; }
+  14% { opacity: 0.4; }
+  16% { opacity: 1; }
+  60% { opacity: 0.92; }
+  61% { opacity: 0.4; }
+  62% { opacity: 1; }
+}
+
+@keyframes smokeDrift {
+  0% { transform: translate3d(-10px, 0, 0) scale(0.96); opacity: 0.25; }
+  100% { transform: translate3d(30px, -30px, 0) scale(1.08); opacity: 0.5; }
+}
+
+@keyframes particleFloat {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(0.9); opacity: 0.3; }
+  30% { transform: translate3d(14px, -18px, 0) scale(1.3); opacity: 1; }
+  60% { transform: translate3d(-12px, -30px, 0) scale(0.8); opacity: 0.7; }
 }
 
 ::selection {

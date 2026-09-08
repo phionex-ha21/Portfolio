@@ -3,9 +3,20 @@ import { FiArrowRight, FiDownload } from "react-icons/fi";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-8">
+    <section className="hero-shell min-h-screen flex items-center justify-center px-8 relative overflow-hidden">
 
-      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-20 items-center">
+      <div className="hero-atmosphere" aria-hidden="true">
+        <span className="particle particle-1" />
+        <span className="particle particle-2" />
+        <span className="particle particle-3" />
+        <span className="particle particle-4" />
+        <span className="particle particle-5" />
+        <span className="particle particle-6" />
+        <span className="smoke smoke-1" />
+        <span className="smoke smoke-2" />
+      </div>
+
+      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-20 items-center relative z-10">
 
         {/* LEFT */}
 
@@ -15,17 +26,23 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
 
-          <p className="text-secondary mb-4 tracking-[4px] gradient-title">
+          <p
+            className="cinematic-kicker text-secondary mb-4 tracking-[4px]"
+            data-text="INITIALIZING USER..."
+          >
             INITIALIZING USER...
           </p>
 
-          <h1 className="text-6xl md:text-7xl font-black leading-tight gradient-title">
+          <h1
+            className="cinematic-title text-6xl md:text-7xl font-black leading-tight"
+            data-text="MADHAV"
+          >
 
             MADHAV
 
             <br />
 
-            <span className="gradient-title">
+            <span className="cinematic-title" data-text="YADAV">
               YADAV
             </span>
 
