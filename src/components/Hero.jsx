@@ -15,17 +15,17 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
 
-          <p className="text-secondary mb-4 tracking-[4px]">
+          <p className="text-secondary mb-4 tracking-[4px] gradient-title">
             INITIALIZING USER...
           </p>
 
-          <h1 className="text-6xl md:text-7xl font-black leading-tight">
+          <h1 className="text-6xl md:text-7xl font-black leading-tight gradient-title">
 
             MADHAV
 
             <br />
 
-            <span className="text-primary">
+            <span className="gradient-title">
               YADAV
             </span>
 

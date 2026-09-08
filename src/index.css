@@ -9,6 +9,40 @@ html, body {
   cursor: none; /* Hide default cursor for custom one */
 }
 
+h1, h2, h3, h4, .brand-name, .gradient-title {
+  background: linear-gradient(90deg,
+    #fffaf3 0%,
+    #f8d7a0 12%,
+    #f0b868 24%,
+    #dff8ff 42%,
+    #fff4e6 58%,
+    #f7d093 74%,
+    #ecf8ff 100%);
+  background-size: 220% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 18px rgba(247, 192, 106, 0.2));
+  animation: shimmerText 6s ease-in-out infinite alternate;
+}
+
+@keyframes shimmerText {
+  0% {
+    background-position: 0% 50%;
+    filter: drop-shadow(0 0 12px rgba(247, 192, 106, 0.18));
+  }
+  50% {
+    background-position: 55% 50%;
+    filter: drop-shadow(0 0 20px rgba(202, 236, 255, 0.25));
+  }
+  100% {
+    background-position: 100% 50%;
+    filter: drop-shadow(0 0 18px rgba(247, 192, 106, 0.24));
+  }
+}
+
 ::selection {
   @apply bg-secondary text-onyx;
 }

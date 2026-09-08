@@ -45,7 +45,7 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto h-20 px-8 flex justify-between items-center">
 
-        <h1 className="text-2xl font-bold tracking-widest text-primary">
+        <h1 className="brand-name text-2xl font-bold tracking-widest">
           &lt;MADHAV /&gt;
         </h1>
 
