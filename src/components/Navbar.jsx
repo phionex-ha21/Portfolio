@@ -43,9 +43,9 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-primary/20 bg-onyx/85">
 
-      <div className="max-w-7xl mx-auto h-20 px-8 flex justify-end items-center">
+      <div className="max-w-7xl mx-auto h-20 px-8 flex items-center justify-center relative">
 
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex items-center justify-center gap-8 w-full">
 
           {links.map((item) => (
             <button
@@ -63,7 +63,7 @@ export default function Navbar() {
 
         </nav>
 
-        <div className="flex items-center gap-5">
+        <div className="absolute right-8 flex items-center gap-5">
 
           <a
             href="https://github.com/phionex-ha21"
