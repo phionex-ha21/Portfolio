@@ -47,9 +47,9 @@ export default function Navbar() {
 
         <h1
           className="cinematic-brand brand-name text-2xl font-bold tracking-widest"
-          data-text="<MADHAV />"
+          data-text="<MADHAV>"
         >
-          &lt;MADHAV /&gt;
+          &lt;MADHAV&gt;
         </h1>
 
         <nav className="hidden md:flex gap-8">
