@@ -43,9 +43,15 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-primary/20 bg-onyx/85">
 
-      <div className="max-w-7xl mx-auto h-20 px-8 flex items-center justify-center relative">
+      <div className="max-w-7xl mx-auto h-20 px-8 flex items-center justify-between relative">
 
-        <nav className="hidden md:flex items-center justify-center gap-8 w-full">
+        <div className="header-name-block">
+          <h1 className="cinematic-title header-name" data-text="MADHAV YADAV">
+            MADHAV YADAV
+          </h1>
+        </div>
+
+        <nav className="hidden md:flex items-center justify-center gap-8">
 
           {links.map((item) => (
             <button

@@ -98,20 +98,13 @@ body {
   border-radius: 9999px;
   background: #2ef2d3;
   box-shadow: 0 0 16px rgba(46, 242, 211, 0.8), 0 0 28px rgba(46, 242, 211, 0.45);
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.2rem;
 }
 
 .hero-title-stack {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.hero-lower-row {
-  display: flex;
-  align-items: flex-end;
-  gap: 2rem;
-  margin-top: 0.25rem;
 }
 
 .cinematic-title {
@@ -123,17 +116,25 @@ body {
   margin: 0;
 }
 
-.cinematic-title.second-line {
-  margin-bottom: 0.2rem;
-}
-
 .cinematic-kicker {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(1.2rem, 2vw, 2.2rem);
   letter-spacing: 0.06em;
-  margin: 0;
+  margin: 0 0 0.25rem;
   text-transform: uppercase;
   color: rgba(255,255,255,0.92);
+}
+
+.header-name-block {
+  flex: 1;
+}
+
+.header-name {
+  font-size: clamp(1.2rem, 1.8vw, 2.4rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin: 0;
+  white-space: nowrap;
 }
 
 @keyframes revealIn {

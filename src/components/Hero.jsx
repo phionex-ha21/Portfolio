@@ -30,19 +30,13 @@ export default function Hero() {
             <span className="status-led" aria-hidden="true" />
 
             <div className="hero-title-stack">
-              <h1 className="cinematic-title" data-text="MADHAV">
-                MADHAV
+              <p className="cinematic-kicker" data-text="INITIALIZING USER...">
+                INITIALIZING USER...
+              </p>
+
+              <h1 className="cinematic-title" data-text="MADHAV YADAV">
+                MADHAV YADAV
               </h1>
-
-              <div className="hero-lower-row">
-                <p className="cinematic-kicker" data-text="INITIALIZING USER...">
-                  INITIALIZING USER...
-                </p>
-
-                <h1 className="cinematic-title second-line" data-text="YADAV">
-                  YADAV
-                </h1>
-              </div>
             </div>
           </div>
 
