@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto h-20 px-8 flex items-center justify-between relative">
 
         <div className="header-name-block">
-          <h1 className="cinematic-title header-name" data-text="MADHAV YADAV">
+          <h1 className="cinematic-brand header-name" data-text="MADHAV YADAV">
             MADHAV YADAV
           </h1>
         </div>
