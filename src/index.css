@@ -80,11 +80,9 @@ body {
   animation: revealIn 1.15s cubic-bezier(0.2, 0.9, 0.2, 1) both, softGlow 6s ease-in-out infinite alternate;
 }
 
-.cinematic-brand::before,
 .cinematic-kicker::before,
-.cinematic-title::before,
-.cinematic-brand::after,
 .cinematic-kicker::after,
+.cinematic-title::before,
 .cinematic-title::after {
   content: attr(data-text);
   position: absolute;
@@ -95,7 +93,6 @@ body {
   mix-blend-mode: screen;
 }
 
-.cinematic-brand::before,
 .cinematic-kicker::before,
 .cinematic-title::before {
   color: rgba(255, 103, 196, 0.44);
@@ -103,12 +100,17 @@ body {
   animation: glitchLayerA 3.8s ease-in-out infinite 0.9s;
 }
 
-.cinematic-brand::after,
 .cinematic-kicker::after,
 .cinematic-title::after {
   color: rgba(142, 205, 255, 0.44);
   transform: translate3d(1px, 0, 0);
   animation: glitchLayerB 4.1s ease-in-out infinite 0.9s;
+}
+
+.cinematic-brand::before,
+.cinematic-brand::after {
+  content: none;
+  display: none;
 }
 
 .cinematic-kicker {
