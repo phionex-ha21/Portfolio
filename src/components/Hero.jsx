@@ -6,7 +6,6 @@ export default function Hero() {
       <div className="max-w-[1280px] mx-auto grid lg:grid-cols-[1.08fr_0.92fr] gap-10 xl:gap-16 items-center pt-28 pb-20 relative z-10">
         <div className="hero-copy">
           <div className="hero-title-block">
-            <span className="status-led" aria-hidden="true" />
             <span className="initializing-label">INITIALIZING USER...</span>
           </div>
 
