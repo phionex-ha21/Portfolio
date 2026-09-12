@@ -2,17 +2,20 @@ import { FiArrowRight, FiDownload } from "react-icons/fi";
 
 export default function Hero() {
   return (
-    <section className="hero-shell flex items-center justify-center px-6 md:px-10">
-      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center pt-32 pb-20 relative z-10">
-        <div>
+    <section className="hero-shell">
+      <div className="max-w-[1280px] mx-auto grid lg:grid-cols-[1.08fr_0.92fr] gap-10 xl:gap-16 items-center pt-28 pb-20 relative z-10">
+        <div className="hero-copy">
           <div className="hero-title-block">
             <span className="status-led" aria-hidden="true" />
-            <div className="hero-title-stack">
-              <h1 className="cinematic-title hero-main-text">INITIALIZING USER...</h1>
-            </div>
+            <span className="initializing-label">INITIALIZING USER...</span>
           </div>
 
-          <div className="hero-list mt-8">
+          <div className="hero-name-block">
+            <h1 className="hero-name hero-name-white">MADHAV</h1>
+            <h1 className="hero-name hero-name-purple">YADAV</h1>
+          </div>
+
+          <div className="hero-list">
             <span>&gt; Cyber Security Student</span>
             <span>&gt; QA Tester</span>
             <span>&gt; Ethical Hacker</span>
@@ -20,8 +23,8 @@ export default function Hero() {
           </div>
 
           <p className="hero-bio">
-            Passionate about Cyber Security, Penetration Testing, Web Development and
-            building secure applications. I enjoy finding vulnerabilities, solving
+            Passionate about Cyber Security, Penetration Testing, Web Development
+            and building secure applications. I enjoy finding vulnerabilities, solving
             real-world problems and creating modern web experiences.
           </p>
 

@@ -41,21 +41,21 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#050d18]/90 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto h-20 px-8 flex items-center justify-between relative">
+    <header className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#050b14]/90 backdrop-blur-sm">
+      <div className="max-w-[1440px] mx-auto h-[90px] px-8 md:px-10 flex items-center justify-between gap-5">
         <div className="header-name-block shrink-0">
           <h1 className="cinematic-brand header-name" data-text="<MADHAV />">
             &lt;MADHAV /&gt;
           </h1>
         </div>
 
-        <nav className="hidden md:flex items-center justify-center gap-8 text-sm uppercase tracking-wide text-white/80">
+        <nav className="hidden md:flex items-center justify-center gap-8 text-[0.76rem] uppercase tracking-[0.02em] text-white/80">
           {links.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
               className={`transition duration-300 hover:text-secondary ${
-                active === item.id ? "text-secondary" : "text-white/80"
+                active === item.id ? "text-[#35E06F]" : "text-white/80"
               }`}
             >
               {item.name}
@@ -63,7 +63,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="absolute right-8 flex items-center gap-5 text-secondary">
+        <div className="flex items-center gap-5 text-[#35E06F] ml-auto shrink-0">
           <a
             href="https://github.com/phionex-ha21"
             target="_blank"
