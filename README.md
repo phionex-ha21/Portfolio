@@ -1,16 +1,44 @@
-# React + Vite
+# Madhav Yadav Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cyber-themed portfolio website built with React and Vite, inspired by the original terminal-style design shown in the reference mockup.
 
-Currently, two official plugins are available:
+## Live demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+GitHub repository: https://github.com/phionex-ha21/Portfolio
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Icons
 
-## Expanding the ESLint configuration
+## Local development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+```
+
+## Preview production build
+
+```bash
+npm run preview
+```
+
+## Project structure
+
+- src/components — portfolio sections and UI blocks
+- src/App.jsx — app shell and section structure
+- src/index.css — global styling and terminal-inspired theme
+
+## Notes
+
+This project is configured as a GitHub-hosted portfolio and is ready to be committed and pushed to the connected remote repository.

@@ -41,58 +41,48 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-primary/20 bg-onyx/85">
-
+    <header className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#050d18]/90 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto h-20 px-8 flex items-center justify-between relative">
-
-        <div className="header-name-block">
-          <h1 className="cinematic-brand header-name" data-text="MADHAV YADAV">
-            MADHAV YADAV
+        <div className="header-name-block shrink-0">
+          <h1 className="cinematic-brand header-name" data-text="<MADHAV />">
+            &lt;MADHAV /&gt;
           </h1>
         </div>
 
-        <nav className="hidden md:flex items-center justify-center gap-8">
-
+        <nav className="hidden md:flex items-center justify-center gap-8 text-sm uppercase tracking-wide text-white/80">
           {links.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
               className={`transition duration-300 hover:text-secondary ${
-                active === item.id
-                  ? "text-primary"
-                  : "text-white"
+                active === item.id ? "text-secondary" : "text-white/80"
               }`}
             >
               {item.name}
             </button>
           ))}
-
         </nav>
 
-        <div className="absolute right-8 flex items-center gap-5">
-
+        <div className="absolute right-8 flex items-center gap-5 text-secondary">
           <a
             href="https://github.com/phionex-ha21"
             target="_blank"
             rel="noreferrer"
-            className="text-secondary hover:text-white transition"
+            className="hover:text-white transition"
           >
-            <FiGithub size={22} />
+            <FiGithub size={20} />
           </a>
 
           <a
             href="https://www.linkedin.com/in/madhav-yadav-761800206"
             target="_blank"
             rel="noreferrer"
-            className="text-secondary hover:text-white transition"
+            className="hover:text-white transition"
           >
-            <FiLinkedin size={22} />
+            <FiLinkedin size={20} />
           </a>
-
         </div>
-
       </div>
-
     </header>
   );
 }

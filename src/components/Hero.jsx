@@ -1,162 +1,75 @@
-import { motion } from "framer-motion";
 import { FiArrowRight, FiDownload } from "react-icons/fi";
 
 export default function Hero() {
   return (
-    <section className="hero-shell min-h-screen flex items-center justify-center px-8 relative overflow-hidden">
-
-      <div className="hero-atmosphere" aria-hidden="true">
-        <span className="particle particle-1" />
-        <span className="particle particle-2" />
-        <span className="particle particle-3" />
-        <span className="particle particle-4" />
-        <span className="particle particle-5" />
-        <span className="particle particle-6" />
-        <span className="smoke smoke-1" />
-        <span className="smoke smoke-2" />
-      </div>
-
-      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-20 items-center relative z-10">
-
-        {/* LEFT */}
-
-        <motion.div
-          initial={{ opacity: 0, x: -70 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-
+    <section className="hero-shell flex items-center justify-center px-6 md:px-10">
+      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center pt-32 pb-20 relative z-10">
+        <div>
           <div className="hero-title-block">
             <span className="status-led" aria-hidden="true" />
-
             <div className="hero-title-stack">
-              <h1 className="cinematic-title hero-main-text" data-text="INITIALIZING USER...">
-                INITIALIZING USER...
-              </h1>
+              <h1 className="cinematic-title hero-main-text">INITIALIZING USER...</h1>
             </div>
           </div>
 
-          <div className="mt-8 space-y-3 text-lg text-white">
-
-            <p>&gt; Cyber Security Student</p>
-
-            <p>&gt; QA Tester</p>
-
-            <p>&gt; Ethical Hacker</p>
-
-            <p>&gt; Python Developer</p>
-
+          <div className="hero-list mt-8">
+            <span>&gt; Cyber Security Student</span>
+            <span>&gt; QA Tester</span>
+            <span>&gt; Ethical Hacker</span>
+            <span>&gt; Python Developer</span>
           </div>
 
-          <p className="mt-10 text-white leading-8 max-w-xl">
-
-            Passionate about Cyber Security, Penetration Testing,
-            Web Development and building secure applications.
-            I enjoy finding vulnerabilities, solving real-world
-            problems and creating modern web experiences.
-
+          <p className="hero-bio">
+            Passionate about Cyber Security, Penetration Testing, Web Development and
+            building secure applications. I enjoy finding vulnerabilities, solving
+            real-world problems and creating modern web experiences.
           </p>
 
-          <div className="flex gap-5 mt-12 flex-wrap">
-
-            <a
-              href="#projects"
-              className="flex items-center gap-3
-              bg-primary
-              text-white
-              px-8
-              py-4
-              rounded-lg
-              font-semibold
-              hover:scale-105
-              transition"
-            >
+          <div className="btn-row">
+            <a href="#projects" className="primary-btn">
               View Projects
-
               <FiArrowRight />
             </a>
 
-            <a
-              href="/Madhav Yadav.pdf"
-              className="border
-              border-secondary
-              px-8
-              py-4
-              rounded-lg
-              flex
-              items-center
-              gap-3
-              hover:bg-secondary
-              hover:text-onyx
-              transition"
-              download
-            >
+            <a href="/Madhav Yadav.pdf" className="secondary-btn" download>
               Resume
-
               <FiDownload />
             </a>
-
           </div>
+        </div>
 
-        </motion.div>
-
-        {/* RIGHT */}
-
-        <motion.div
-          initial={{ opacity: 0, x: 70 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-
-          <div className="rounded-xl border border-primary overflow-hidden shadow-[0_0_40px_rgba(127,0,255,.28)]">
-
-            <div className="bg-onyx border-b border-secondary px-5 py-3 flex gap-2">
-
-              <div className="w-3 h-3 rounded-full bg-primary"></div>
-
-              <div className="w-3 h-3 rounded-full bg-secondary"></div>
-
-              <div className="w-3 h-3 rounded-full bg-white"></div>
-
+        <div className="flex justify-center lg:justify-end">
+          <div className="terminal-window">
+            <div className="terminal-header">
+              <span className="terminal-dot red"></span>
+              <span className="terminal-dot yellow"></span>
+              <span className="terminal-dot green"></span>
             </div>
 
-            <div className="bg-onyx p-8 font-mono text-secondary leading-8">
+            <div className="terminal-body">
+              <div className="terminal-block">
+                <p className="terminal-id">$ whoami</p>
+                <p className="terminal-name">Madhav Yadav</p>
+              </div>
 
-              <p>$ whoami</p>
+              <div className="terminal-block">
+                <p className="terminal-id">$ role</p>
+                <p className="terminal-name">Cyber Security Student</p>
+              </div>
 
-              <p>Madhav Yadav</p>
+              <div className="terminal-block">
+                <p className="terminal-id">$ skills</p>
+                <p className="terminal-name">Python • Networking • Postman • QA Testing • Web Security</p>
+              </div>
 
-              <br />
-
-              <p>$ role</p>
-
-              <p>Cyber Security Student</p>
-
-              <br />
-
-              <p>$ skills</p>
-
-              <p>
-                Python • Networking • Postman • QA Testing •
-                Web Security
-              </p>
-
-              <br />
-
-              <p>$ status</p>
-
-              <p className="text-primary">
-                Building Secure Systems...
-              </p>
-
+              <div className="terminal-block">
+                <p className="terminal-id">$ status</p>
+                <p className="terminal-status">Building Secure Systems...</p>
+              </div>
             </div>
-
           </div>
-
-        </motion.div>
-
+        </div>
       </div>
-
     </section>
   );
 }
