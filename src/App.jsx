@@ -1,3 +1,4 @@
+import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -9,37 +10,41 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="app-shell">
-      <Navbar />
+    <>
+      <CustomCursor />
 
-      <main className="relative z-10">
-        <section id="home">
-          <Hero />
-        </section>
+      <div className="app-shell">
+        <Navbar />
 
-        <section id="about">
-          <About />
-        </section>
+        <main className="relative z-10">
+          <section id="home">
+            <Hero />
+          </section>
 
-        <section id="skills">
-          <Skills />
-        </section>
+          <section id="about">
+            <About />
+          </section>
 
-        <section id="projects">
-          <Projects />
-        </section>
+          <section id="skills">
+            <Skills />
+          </section>
 
-        <section id="experience">
-          <Experience />
-        </section>
+          <section id="projects">
+            <Projects />
+          </section>
 
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
+          <section id="experience">
+            <Experience />
+          </section>
 
-      <Footer />
-    </div>
+          <section id="contact">
+            <Contact />
+          </section>
+        </main>
+
+        <Footer />
+      </div>
+    </>
   );
 }
 

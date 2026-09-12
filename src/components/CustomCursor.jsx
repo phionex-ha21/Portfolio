@@ -1,47 +1,28 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 
 export default function CustomCursor() {
-  const [position, setPosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const move = (e) => {
+    const handleMove = (event) => {
       setPosition({
-        x: e.clientX,
-        y: e.clientY,
+        x: event.clientX,
+        y: event.clientY,
       });
     };
 
-    window.addEventListener("mousemove", move);
+    window.addEventListener("pointermove", handleMove);
 
-    return () => window.removeEventListener("mousemove", move);
+    return () => window.removeEventListener("pointermove", handleMove);
   }, []);
 
   return (
-    <motion.div
-      animate={{
-        x: position.x - 10,
-        y: position.y - 10,
+    <div
+      aria-hidden="true"
+      className="cursor-follower"
+      style={{
+        transform: `translate(${position.x}px, ${position.y}px)`,
       }}
-      transition={{
-        type: "spring",
-        stiffness: 600,
-        damping: 30,
-      }}
-      className="
-      fixed
-      top-0
-      left-0
-      w-5
-      h-5
-      rounded-full
-      bg-secondary
-      pointer-events-none
-      z-[9999]
-      shadow-[0_0_20px_#00F5D4]"
     />
   );
 }
