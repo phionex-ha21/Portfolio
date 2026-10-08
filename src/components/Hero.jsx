@@ -33,7 +33,7 @@ export default function Hero() {
               <FiArrowRight />
             </a>
 
-            <a href="/Madhav Yadav.pdf" className="secondary-btn" download>
+            <a href="/Resume.pdf" className="secondary-btn" download>
               Resume
               <FiDownload />
             </a>
