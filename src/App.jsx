@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import BugReport from "./components/BugReport";
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
 
           <section id="experience">
             <Experience />
+          </section>
+
+          <section id="bug-report">
+            <BugReport />
           </section>
 
           <section id="contact">

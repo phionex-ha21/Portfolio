@@ -7,6 +7,7 @@ const links = [
   { name: "Skills", id: "skills" },
   { name: "Projects", id: "projects" },
   { name: "Experience", id: "experience" },
+  { name: "Bug Report", id: "bug-report" },
   { name: "Contact", id: "contact" },
 ];
 
@@ -49,7 +50,7 @@ export default function Navbar() {
           </h1>
         </div>
 
-        <nav className="hidden md:flex items-center justify-center gap-8 text-[0.76rem] uppercase tracking-[0.02em] text-white/80">
+        <nav className="hidden md:flex items-center justify-center gap-3 text-[0.7rem] uppercase tracking-[0.02em] text-white/80 xl:gap-6 xl:text-[0.76rem]">
           {links.map((item) => (
             <button
               key={item.id}
